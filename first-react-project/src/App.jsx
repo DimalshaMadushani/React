@@ -11,6 +11,11 @@ import ShoppingList from './ShoppingList.jsx'
 import PropertyList from './PropertyList.jsx'
 import Clicker from './Clicker.jsx'
 import Form from './Form.jsx'
+import Counter from './Counter.jsx'
+import Toggler from './Toggler.jsx'
+import ToggleCounter from './ToggleCounter.jsx'
+import ColorBoxGrid from './ColorBoxGrid.jsx'
+import ColorBox from './ColorBox.jsx'
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -25,6 +30,23 @@ const data = [
   { id: 2, item: "Banana", quantity: 2 , completed: true},
   { id: 3,  item: "Cherry", quantity: 5, completed: false },
   { id: 4, item: "Orange", quantity: 4, completed: true }
+]
+
+//a array with different color codes
+const colors = [
+  "#E57373",  // Light red
+  "#FFEB3B",  // Yellow
+  "#81C784",  // Green
+  "#64B5F6",  // Blue
+  "#BA68C8",  // Purple
+  "#FF7043",  // Deep orange
+  "#26A69A",  // Teal
+  "#7E57C2",  // Deep purple
+  "#FFCA28",  // Amber
+  "#42A5F5",  // Light blue
+  "#66BB6A",  // Light green
+  "#EC407A",  // Pink
+  "#8D6E63"   // Brown
 ]
 function App() {
   return (
@@ -44,7 +66,13 @@ function App() {
       {/* <PropertyList properties={properties}/> */}
       {/* <Clicker/> */}
       {/* <Form/> */}
-      <Clicker message='Please stop' buttonText='Click me'/>
+      {/* <Clicker message='Please stop' buttonText='Click me'/> */}
+      {/* <Counter/> */}
+      {/* <Toggler/> */}
+      {/* <ToggleCounter/> */}
+      <ColorBoxGrid colors={colors}/>
+      <ColorBox colors={colors} />
+
     </>
   )
 }
