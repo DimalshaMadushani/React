@@ -9,6 +9,8 @@ import ColorList from './ColorList.jsx'
 import Slot from './Slot.jsx'
 import ShoppingList from './ShoppingList.jsx'
 import PropertyList from './PropertyList.jsx'
+import Clicker from './Clicker.jsx'
+import Form from './Form.jsx'
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -38,8 +40,11 @@ function App() {
       <Slot val1 = '🍎' val2 = '🍎' val3 = '🍎'/> */}
 
 
-      <ShoppingList items={data}/>
+      {/* <ShoppingList items={data}/> */}
       {/* <PropertyList properties={properties}/> */}
+      {/* <Clicker/> */}
+      {/* <Form/> */}
+      <Clicker message='Please stop' buttonText='Click me'/>
     </>
   )
 }
